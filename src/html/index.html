@@ -14,13 +14,31 @@
         <h1>Buscador de series</h1>
     </header>
     <main class="main">
-        <section class="search">
-            boton + busqueda + favoritos
-        </section>
-        <section class="movies">
-            peliculas
-        </section>
 
+        <main class="main">
+            <section class="main__form-container">
+                <form action="GET" class="main__form">
+                    <label class="main__form-container--input-title" for="text">What series are you looking for?</label>
+                    <input id="text" type="text" class="main__form-container--search js-search"
+                        placeholder="Ej: Game of Thrones" required />
+                    <input type="button" value="Search" class="main__form-container--btn js-btn"
+                        title="Click to search" />
+                </form>
+            </section>
+            <section class="main__results-container">
+
+                <aside class="main__favourites">
+                    <h2 class="main__favourites--title">My favourites</h2>
+                    <button class="main__favourites--button js-delete-all" title="Click to delete favourite list">
+                        <i class="far fa-trash-alt"></i> Delete all
+                    </button>
+                    <ul class="main__favourites--list js-favourite-list"></ul>
+                </aside>
+                <article class="main__results">
+                    <ul class="main__results--list js-results-list"></ul>
+                </article>
+            </section>
+        </main>
     </main>
     <script src="./assets/js/main.js"></script>
 </body>
