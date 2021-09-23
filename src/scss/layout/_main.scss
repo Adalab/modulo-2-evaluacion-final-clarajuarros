@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.main__favourites--list {
-  display: block;
+.favorite-list {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
